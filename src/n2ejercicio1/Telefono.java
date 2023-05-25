@@ -22,7 +22,7 @@ public class Telefono {
 	}
 	
 	//metodo que recibe una llamada
-	public void llamar(String numero) {
+	protected void llamar(String numero) {
 		System.out.println("Se está llamando al teléfono " + numero);
 	}
 	

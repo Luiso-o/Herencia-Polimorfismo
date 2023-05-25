@@ -6,7 +6,7 @@ import javax.swing.JOptionPane;
 public class MetodosMenu {
 
 	//Introducir
-	static void IntroducirRedactor(ArrayList<Redactor>misRedactores) {
+	public static void IntroducirRedactor(ArrayList<Redactor>misRedactores) {
 		
 		//Redactor(String nombre, String dni, int sueldo)
 		
@@ -21,7 +21,7 @@ public class MetodosMenu {
 		
 	}
 	
-	static void IntroducirNoticiaAUnRedactor(ArrayList<Redactor>misRedactores, ArrayList<Noticia>misNoticias) {
+	public static void IntroducirNoticiaAUnRedactor(ArrayList<Redactor>misRedactores, ArrayList<Noticia>misNoticias) {
 		
 		String titularNoticia = JOptionPane.showInputDialog("Introduce el tituar de la noticia");
 		int indiceNoticia = encuentraIndiceNoticia(titularNoticia,misNoticias);
@@ -46,7 +46,7 @@ public class MetodosMenu {
 	}
 
 	//Eliminar
-	static void eliminarRedactor(ArrayList<Redactor>misRedactores) {
+	public static void eliminarRedactor(ArrayList<Redactor>misRedactores) {
 		
 		String dni = JOptionPane.showInputDialog("Introduce el dni del Redactor");
 		
@@ -63,7 +63,7 @@ public class MetodosMenu {
 			
 	}
 	
-	static void eliminarNoticia(ArrayList<Redactor>misRedactores,ArrayList<Noticia>misNoticias) {
+	public static void eliminarNoticia(ArrayList<Redactor>misRedactores,ArrayList<Noticia>misNoticias) {
 		
 		String dniRedactor = JOptionPane.showInputDialog("Introduce el dni del redactor");
 		int indiceRedactor = encuentraIndiceRedactor(dniRedactor,misRedactores);
@@ -90,7 +90,7 @@ public class MetodosMenu {
 	}
 	
 	//Buscar
-	static int encuentraIndiceRedactor(String dni, ArrayList<Redactor>misRedactores) {
+	public static int encuentraIndiceRedactor(String dni, ArrayList<Redactor>misRedactores) {
 		
 		int indice = -1;
 		int contador = 0;
@@ -110,7 +110,7 @@ public class MetodosMenu {
 		
 	}
 	
-	static int encuentraIndiceNoticia(String titular, ArrayList<Noticia> misNoticias) {
+	public static int encuentraIndiceNoticia(String titular, ArrayList<Noticia> misNoticias) {
 	    int indice = -1;
 	    int contador = 0;
 	    
@@ -126,7 +126,7 @@ public class MetodosMenu {
 	}
 	
 	//mostrar
-	static void mostrarNoticiasPorRedactor(ArrayList<Redactor>misRedactores) {
+	public static void mostrarNoticiasPorRedactor(ArrayList<Redactor>misRedactores) {
 		
 		for (int i = 0; i < misRedactores.size(); i++) {
 			
@@ -135,7 +135,7 @@ public class MetodosMenu {
 		
 	}
 	
-	static void mostrarPuntuacionDeLaNoticia(ArrayList<Noticia>misNoticias) {
+	public static void mostrarPuntuacionDeLaNoticia(ArrayList<Noticia>misNoticias) {
 		
 	for (int i = 0; i < misNoticias.size(); i++) {
 			
@@ -144,7 +144,7 @@ public class MetodosMenu {
 		
 	}
 	
-	static void mostrarPrecioNoticia(ArrayList<Noticia>misNoticias) {
+	public static void mostrarPrecioNoticia(ArrayList<Noticia>misNoticias) {
 		
 	for (int i = 0; i < misNoticias.size(); i++) {
 				

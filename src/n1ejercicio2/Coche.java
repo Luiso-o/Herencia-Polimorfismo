@@ -3,9 +3,9 @@ package n1ejercicio2;
 public class Coche {
 	
 	//creamos los atributos
-	static final String marca = "Audi";
-	static String modelo;//este atrubuto se puede inicializar en el constructor
-	final String potencia = "400 caballos de potencia";
+	private static final String marca = "Audi";
+	private static String modelo;//este atrubuto se puede inicializar en el constructor
+	private final String potencia = "400 caballos de potencia";
 	
 	//constructor
 	public Coche(String modelo) {
@@ -26,12 +26,12 @@ public class Coche {
 	}
 	
 	//metodo que hace acelerar el coche
-	public void acelerar() {
+	private void acelerar() {
 		System.out.println("El coche está acelerando");
 	}
 	
 	//metodo estatico que hace frenar el coche
-	public static void frenar() {
+	private static void frenar() {
 		System.out.println("El coche está frenando");
 	}
 	

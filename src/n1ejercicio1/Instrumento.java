@@ -15,7 +15,7 @@ abstract class Instrumento{
 	}
 	
 	//determina que tipo de instrumento se está tocando
-	abstract void tocar();
+	abstract protected void tocar();
 	
 	}
 

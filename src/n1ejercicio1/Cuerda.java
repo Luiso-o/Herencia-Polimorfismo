@@ -14,7 +14,7 @@ package n1ejercicio1;
 		}
 	
 		@Override
-		void tocar() {
+		protected void tocar() {
 		System.out.println("Se está tocando un instrumento de cuerda\n");
 			
 		}

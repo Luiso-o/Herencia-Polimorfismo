@@ -15,7 +15,7 @@ public class notMotociclismo extends Noticia{
 	}
 
 	@Override
-	int calcularPrecioNoticia() {
+	protected int calcularPrecioNoticia() {
 		
 		int precioPorEscuderia;
 		
@@ -30,7 +30,7 @@ public class notMotociclismo extends Noticia{
 	}
 
 	@Override
-	int calcularPuntuacion() {
+	protected int calcularPuntuacion() {
 		
 		int puntajePorEscuderia = 0;
 		

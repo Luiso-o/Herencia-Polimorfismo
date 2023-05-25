@@ -22,7 +22,7 @@ public class notTenis extends Noticia{
 	}
 
 	@Override
-	int calcularPrecioNoticia() {
+	protected int calcularPrecioNoticia() {
 
 		int precioPorDeportista;
 		
@@ -39,7 +39,7 @@ public class notTenis extends Noticia{
 	}
 
 	@Override
-	int calcularPuntuacion() {
+	protected int calcularPuntuacion() {
 	
 		int puntosPorDeportista = 0;
 		
