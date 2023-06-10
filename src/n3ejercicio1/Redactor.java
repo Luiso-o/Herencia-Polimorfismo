@@ -45,7 +45,5 @@ public class Redactor {
 		return "Redactor " + nombre + 
 				"\n" + noticias;
 	}
-	
-	
 
 }

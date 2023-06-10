@@ -39,8 +39,8 @@ public abstract class Noticia {//clase madre
 	}
 	
 	//Metodos abstractos
-	abstract protected int calcularPrecioNoticia();
+	public protected int calcularPrecioNoticia();
 	
-	abstract protected int calcularPuntuacion();
+	public protected int calcularPuntuacion();
 	
 }

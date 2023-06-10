@@ -29,7 +29,7 @@ public class notBasquet extends Noticia{
 	}
 
 	@Override
-	protected int calcularPrecioNoticia() {
+	public int calcularPrecioNoticia() {
 		
 		int precioPorLiga;
 		int precioPorEquipo;
@@ -50,7 +50,7 @@ public class notBasquet extends Noticia{
 	}
 
 	@Override
-	protected int calcularPuntuacion() {
+	public int calcularPuntuacion() {
 	
 		int puntosPorLiga = 0;
 		int puntosPorEquipo = 0;

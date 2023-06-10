@@ -39,7 +39,7 @@ public class notTenis extends Noticia{
 	}
 
 	@Override
-	protected int calcularPuntuacion() {
+	public int calcularPuntuacion() {
 	
 		int puntosPorDeportista = 0;
 		
