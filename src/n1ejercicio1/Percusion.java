@@ -16,7 +16,7 @@ class Percusion extends Instrumento{
 	}
 
 	@Override
-	protected void tocar() {
+	prublic void tocar() {
 	System.out.println("Se está tocando un instrumento de percusión\n");
 		
 	}
